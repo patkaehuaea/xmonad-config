@@ -284,8 +284,8 @@ myStartupHook = do
 -- Run xmonad with the settings you specify. No need to modify this.
 --
 main = do 
-  -- xmproc <- spawnPipe "xmobar -x 0 ~/.xmonad/xmobar.config"	
-	xmonad $ docks defaults
+  -- xmproc <- spawnPipe "xmobar -x 0 ~/.xmonad/xmobar.config"  
+  xmonad $ docks defaults
 
 -- A structure containing your configuration settings, overriding
 -- fields in the default config. Any you don't override, will
@@ -295,7 +295,7 @@ main = do
 --
 -- FYI: The ewmh configuration to enable polybar was
 -- taken from this post - https://github.com/polybar/polybar/issues/2020
-defaults = ewmh $ defaultConfig {
+defaults = ewmh $ def {
       -- simple stuff
         terminal           = myTerminal,
         focusFollowsMouse  = myFocusFollowsMouse,
