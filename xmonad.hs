@@ -275,7 +275,7 @@ myLogHook = ewmhDesktopsLogHook
 
 myStartupHook = do
   -- TODO: Parameterize this entry and add wallpaper as dependency in README.
-  spawnOnce "feh --bg-scale ~/Wallpapers/john-fowler-RsRTIofe0HE-unsplash.jpg &"
+  spawnOnce "nitrogen --set-scaled ~/src/wallpapers/0290.jpg &"
   spawnOnce ".config/polybar/launch.sh &"
 
 ------------------------------------------------------------------------
